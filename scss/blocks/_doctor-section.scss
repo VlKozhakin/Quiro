@@ -1,0 +1,67 @@
+
+.doctor-section {
+    margin-bottom: 129px;
+    text-align: center;
+}
+.title {
+    margin-bottom: 70px;
+}
+.desc {
+    margin-bottom: 123px;
+    max-width: 837px;
+    margin-inline: auto;
+}
+.doctor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-inline: auto;
+    @include tablet-small {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+    &-card {
+        background: #F9F1FE;
+        border-radius: 20px;
+        padding: 44px 38px 33px 38px;
+		&__info {
+            display: flex;
+            gap: 13px;
+            max-height: auto;
+            margin-bottom: 25px;
+        }
+        &__infotj {
+            display: flex;
+            flex-direction: column;
+            margin-top: 12px;
+            text-align: left
+        }
+		&__title {
+            @include text($ff, 20px, 23px, 600, $paragraph);
+        }
+		&__job {
+            @include text($ff, 16px, 19px, 400, $text);
+        }
+		&__desc {
+            display: flex;
+            text-align: left;
+            margin-bottom: 39px;
+        }
+    }
+
+}
+.button {
+    display: flex;
+    background: #8842F0;
+    border-radius: 50px;
+    max-width: 282px;
+    min-height: 44px;
+    text-align: center;
+    margin-inline: auto;
+    &__btn {display: flex;
+        margin-inline: auto;
+        padding: 10px 49px;
+    }
+}

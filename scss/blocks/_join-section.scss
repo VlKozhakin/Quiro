@@ -1,0 +1,56 @@
+
+.join-section {
+    min-height: 313px;
+    margin-bottom: 131px;
+    background: #1C1B1F;
+    border-radius: 10px;
+    padding: 10px;
+
+    &__title {
+        padding-top: 80px;
+        margin-bottom: 47px;
+        display: flex;
+        justify-content: center;
+        @include text($ff, 36px, 42px, 700, $white);
+    }
+}
+
+.enter {
+    background: #f9f1fe;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 717px;
+    margin-inline: auto;
+    height: 64px;
+    padding: 0 14px;
+    justify-content:space-between;
+    
+}
+
+.input {
+    width: 100%;
+    background: #f9f1fe;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    @include text($ff, 16px, 19px, 400, $darkgrey);
+   
+
+}
+
+.btn {
+    max-width: 147px;
+    height: 44px;
+    background: #8842F0;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    cursor: pointer;
+    
+    &__a {
+        @include text($ff, 20px, 23px, 600, $white);
+    }
+}

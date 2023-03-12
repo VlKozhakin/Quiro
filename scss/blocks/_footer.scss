@@ -1,0 +1,71 @@
+.footer {
+    background: #F9F1FE;
+}
+.wrapper {
+    max-width: 1178px;
+    margin-inline: auto;
+    padding: 106px 10px 81px 10px;
+    display: flex;
+    gap: 107px;
+    @include mobile {
+        flex-direction: column;
+    }
+}
+.diagnostic {
+    max-width: 431px;
+
+		&__title {
+            @include text($ff, 24px, 28px, 600, $paragraph);
+		}
+		&__desc {
+            @include text($ff, 16px, 19px, 400, $paragraph);
+		}
+}
+.address {
+		&__title {
+            @include text($ff, 20px, 23px, 600, $paragraph);
+        }
+
+		&__desc {
+            @include text($ff, 16px, 19px, 400, $paragraph);
+        }
+}
+.telephone {
+    margin-top: 37px;
+
+		&__title { 
+            @include text($ff, 20px, 23px, 600, $paragraph);
+        }
+
+		&__phone1 {
+            @include text($ff, 16px, 19px, 400, $paragraph);
+        }
+
+		&__phone2 {
+            @include text($ff, 16px, 19px, 400, $paragraph);
+        }
+}
+.email {
+    margin-top: 37px;
+
+		&__title {
+            @include text($ff, 20px, 23px, 600, $paragraph);
+        }
+
+		&__desc {
+            @include text($ff, 16px, 19px, 400, $paragraph);
+        }
+}
+.scedule {
+
+		&__title {
+            @include text($ff, 20px, 23px, 600, $paragraph);
+		}
+}
+.scedule-table {
+
+		&__desc {
+            margin-bottom: 15px;
+            @include text($ff, 16px, 19px, 400, $paragraph);
+		}
+}
